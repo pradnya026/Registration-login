@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import FileUpload from './FileUpload';
 
 import Signup from './Signup'
 import Login from './Login'
@@ -15,6 +16,7 @@ function App() {
         <Route path='/register' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/home' element={<Home />}/>
+        <Route path='/upload' element={<FileUpload />}/>
       </Routes>
     </BrowserRouter>
   )
